@@ -1,21 +1,17 @@
 en:
-  title: Remix, a <span>theme for Hugo</span> fully editable with <span>Netlify
-    CMS</span>
-  slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
+  title: Cercle de la Voile de Lyon - Meyzieu
+  slogan: a club where life is good
   shortDescription: |
-    
-    → Get your own copy of this website in minutes.
-    → Edit everything with no single line of code.
-    → It's free and open-source!
+    a club where life is good
   image: /media/wave.jpg
-  copyright: "  © 2017-2022 - OhBonsaï &"
+  copyright: © 2023 CVLM
   register: Roneo.org
   registerUrl: https://roneo.org/en
 fr:
   image: /media/wave.jpg
-  title: Remix, un <span>theme pour Hugo</span> branché sur <span>Netlify CMS</span>
-  slogan: Lorem magna eiusmod ea eu irure exercitation non incididunt.
-  shortDescription: « Quis do pariatur quis nostrud elit in»
-  copyright: "  © 2017-2022 - OhBonsaï &"
+  title: Cercle de la Voile de Lyon - Meyzieu
+  slogan: un club où il fait bon vivre
+  shortDescription: un club où il fait bon vivre
+  copyright: © 2023 CVLM
   register: Roneo.org
   registerUrl: https://roneo.org/en
