@@ -115,10 +115,10 @@ function initNav() {
     langEle.onclick = function () {
       switch (langEle.innerText) {
         case "en":
-          location.href = "/fr";
+          location.href = "/";
           break;
         case "fr":
-          location.href = "/";
+          location.href = "/en";
           break;
       }
     };

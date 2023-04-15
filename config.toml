@@ -1,27 +1,29 @@
 baseURL = 'https://roneo.itcouldbewor.se/'
-languageCode = 'en-us'
-defaultContentLanguage = 'en'
+languageCode = 'fr-fr'
+defaultContentLanguage = 'fr'
 
 
 [params]
-  title = 'Remix, a theme for Hugo fully editable with Netlify CMS'
-  metaDescription = "Hugo + Netlify CMS + One click deploy to Netlify"
+  title = 'CVLM'
+  metaDescription = "Cercle de la Voile de Lyon - Meyzieu"
 
 
 # Languages
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-mark = "EN"
-
 [Languages.fr]
 languageName = "fr"
 languageCode = "fr-fr"
 contentDir = "content/fr"
-weight = 2
+weight = 1
 mark = "FR"
+
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 2
+mark = "EN"
+
+
 
 
 [taxonomies]

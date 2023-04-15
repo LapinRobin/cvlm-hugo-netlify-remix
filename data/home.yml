@@ -1,17 +1,18 @@
-en:
-  title: Cercle de la Voile de Lyon - Meyzieu
-  slogan: a club where life is good
-  shortDescription: |
-    a club where life is good
-  image: /media/wave.jpg
-  copyright: © 2023 CVLM
-  register: Roneo.org
-  registerUrl: https://roneo.org/en
 fr:
   image: /media/wave.jpg
   title: Cercle de la Voile de Lyon - Meyzieu
   slogan: un club où il fait bon vivre
   shortDescription: un club où il fait bon vivre
-  copyright: © 2023 CVLM
-  register: Roneo.org
-  registerUrl: https://roneo.org/en
+  copyright: © 2023 CVLM - 
+  register: cvlm.club
+  registerUrl: https://cvlm.club/en
+
+en:
+  image: /media/wave.jpg
+  title: Cercle de la Voile de Lyon - Meyzieu
+  slogan: a club where life is good
+  shortDescription: a club where life is good
+  image: /media/wave.jpg
+  copyright: © 2023 CVLM - 
+  register: cvlm.club
+  registerUrl: https://cvlm.club/fr
