@@ -1,24 +1,23 @@
 en:
   backgroundTitle: Contact
-  phone: +86 571 1234 5678
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explica
-  location: Rennes, Bretagne
-  subtitle:
+  phone: 04 78 31 41 32
+  detail: Welcome to our sailing club's contact page! If you have any questions, concerns, or feedback to share with us, 
+    please don't hesitate to reach out via the form on the right.
+  location: 115 Bis Av. du Carreau, 69330 Meyzieu
+  
   title: <span>Contact</span> Us
-  languages: English, French, German
-  email: contact@example.org
-  fax: +86 571 1234 5678
+  languages: English, French
+  email: cvlm.voile@gmail.com
+  
 fr:
   backgroundTitle: Contact
-  phone: "+86 571 1234 5678"
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
-    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-    adipisci.
-  location: Rennes, Bretagne
-  subtitle: Nous contacter
+  phone: 04 78 31 41 32
+  detail: Bienvenue sur la page de contact de notre club de voile ! 
+    Si vous avez des questions, des préoccupations ou des commentaires à partager avec nous, 
+    n'hésitez pas à nous contacter via le formulaire. 
+  location: 115 Bis Av. du Carreau, 69330 Meyzieu
+  
   title: Nous <span>contacter</span>
-  languages: English, French
-  email: contact@example.org
-  fax: +86 571 1234 5678
+  languages: français, anglais
+  email: cvlm.voile@gmail.com
+  
