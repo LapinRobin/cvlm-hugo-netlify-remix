@@ -1,5 +1,5 @@
 {{ $data := index site.Data.news site.Language.Lang }}
-
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <section class="section sec5 content-sec" id="news">
     <div class="main-title">
@@ -20,11 +20,11 @@
                 <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
                     <img src="/media/pexels-pixabay-262508.jpg" alt="">
                     <div class="news-text">
-                        <h3 class="title">Articles récents</h3>
+                        <h3 class="title">{{ $glossary.recent_articles }}</h3>
                         <p>{{ .Summary }}</p>
                     </div>
                 </div>
-                {{ range first 3 (where site.RegularPages "Type" "==" "news") }}
+                <!-- {{ range first 3 (where site.RegularPages "Type" "==" "news") }}
                     <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
                         <img src="/media/{{ path.Base .Params.image }}" alt="">
                         <div class="news-text">
@@ -32,7 +32,7 @@
                             <p>{{ .Summary }}</p>
                         </div>
                     </div>
-                {{ end }}
+                {{ end }} -->
             </div>
         </a>
 

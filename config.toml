@@ -23,7 +23,12 @@ contentDir = "content/english"
 weight = 2
 mark = "EN"
 
-
+[menu]
+  [[menu.main]]
+    identifier = "recent-posts"
+    name = "Recent Posts"
+    url = "/recent-posts/"
+    weight = 10
 
 
 [taxonomies]

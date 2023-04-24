@@ -1,0 +1,25 @@
+{{ $month_names := slice "janvier" "février" "mars" "avril" "mai" "juin" "juillet" "août" "septembre" "octobre" "novembre" "décembre" }}
+{{ $month := sub .Date.Month 1 }}
+{{ partial "header.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+{{ range.Data.Pages }}
+<article class="post-snippet">
+  <h3>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+	<time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Day }}&nbsp;{{ index $month_names $month }} {{ .Date.Year }}</time>
+
+</article>
+{{ end }}
+
+{{ partial "footer.html" . }}
+<!-- {{ define "main" }}
+  {{ range .Data.Pages }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div>{{ .Summary }}</div>
+    </article>
+  {{ end }}
+{{ end }} -->

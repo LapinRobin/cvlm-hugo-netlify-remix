@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+{{ $month_names := slice "janvier" "février" "mars" "avril" "mai" "juin" "juillet" "août" "septembre" "octobre" "novembre" "décembre" }}
+{{ $month := sub .Date.Month 1 }}
+<h1 class="post-title">{{ .Title }}</h1>
+<time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Day }}&nbsp;{{ index $month_names $month }} {{ .Date.Year }}</time>
+
+
+{{ if .Params.image }}
+	<img src="{{ .Params.image }}" >
+{{ end }}
+
+{{ .Content }}
+
+{{ range .Params.images }}
+  <img src="{{ .image }}" alt="Image">
+{{ end }}
+
+
+{{ partial "footer.html" . }}
