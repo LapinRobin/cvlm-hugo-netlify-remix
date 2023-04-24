@@ -1,16 +1,27 @@
 en:
   contact: Contact
-  cta1: See the demo
+  cta1: The club
   cta2: Documentation
   about: About
   product: Features
-  news: News
+  news: Blog
   solution: Solution
   list: List
   home: Home
+  address: Address
+  email: Email
+  telephone: Telephone
+  languages: Languages
+  your_name: Your name
+  your_email: Email address
+  subject: Subject
+  message: Your message here...
+  send_message: Send
+
+
 fr:
   contact: Contact
-  cta1: Demo
+  cta1: Le club CVLM
   cta2: Installation
   about: À propos
   product: Galeries
@@ -18,3 +29,14 @@ fr:
   solution: Solutions
   list: Liste
   home: Accueil
+  address: Adresse
+  email: Courriel
+  telephone: Téléphone
+  languages: Langues
+  your_name: Votre nom
+  your_email: Votre email
+  subject: Sujet
+  message: Ecrivez ici...
+  send_message: Envoyer
+
+

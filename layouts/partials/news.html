@@ -13,25 +13,43 @@
         {{ $data.portText }}
     </p>
 
-
-
     <div class="news">
-
-
-
-        {{ range first 6 (where site.RegularPages "Type" "==" "news")}}
-
-        <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
-
-            <img src="/media/{{ path.Base .Params.image }}" alt="">
-            <div class="news-text">
-                <h4>{{ .Title }}</h4>
-                <!-- <h5>{{ .Date }}</h5> -->
-                <p>{{ .Summary }}</p>
+        <!-- Recent Posts box -->
+        <a href="/recent-posts">
+            <div class="news-box">
+                <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
+                    <img src="/media/pexels-pixabay-262508.jpg" alt="">
+                    <div class="news-text">
+                        <h3 class="title">Articles récents</h3>
+                        <p>{{ .Summary }}</p>
+                    </div>
+                </div>
+                {{ range first 3 (where site.RegularPages "Type" "==" "news") }}
+                    <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
+                        <img src="/media/{{ path.Base .Params.image }}" alt="">
+                        <div class="news-text">
+                            <h4>{{ .Title }}</h4>
+                            <p>{{ .Summary }}</p>
+                        </div>
+                    </div>
+                {{ end }}
             </div>
-        </div>
+        </a>
 
-        {{ end }}
+        <!-- Archive box -->
+        <a href="/archive-posts">
+            <div class="news-box">
 
+                
+                <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
+                    <img src="/media/magnifier-g03d5fe137_1280.jpg" alt="">
+                    <div class="news-text">
+                        <h3>Archives</h3>
+                        <p>{{ .Summary }}</p>
+                    </div>
+                </div>
+               
+            </div>
+        </a>
     </div>
 </section>

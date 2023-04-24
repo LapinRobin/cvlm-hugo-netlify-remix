@@ -1,5 +1,5 @@
 {{ $data := index site.Data.contact site.Language.Lang }}
-
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <section class="section sec6  content-sec" id="contact">
     <div class="main-title">
@@ -18,7 +18,7 @@
                 <div class="contact-item">
                     <div class="icon">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Adresse :</span>
+                        <span>{{$glossary.address}}</span>
                     </div>
                     <p>
                         <span>{{$data.location}}</span>
@@ -27,7 +27,7 @@
                 <div class="contact-item">
                     <div class="icon">
                         <i class="fas fa-envelope"></i>
-                        <span>Courriel :</span>
+                        <span>{{$glossary.email}}</span>
                     </div>
                     <p>
                         <span>{{$data.email}}</span>
@@ -36,7 +36,7 @@
                 <div class="contact-item">
                     <div class="icon">
                         <i class="fas fa-phone"></i>
-                        <span>Téléphone :</span>
+                        <span>{{$glossary.telephone}}</span>
                     </div>
                     <p>
                         <span>{{$data.phone}}</span>
@@ -45,7 +45,7 @@
                 <div class="contact-item">
                     <div class="icon">
                         <i class="fas fa-globe-africa"></i>
-                        <span>Langues :</span>
+                        <span>{{$glossary.languages}}</span>
                     </div>
                     <p>
                         <span>{{$data.languages}}</span>
@@ -65,19 +65,19 @@
         <div class="right-contact">
             <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
                 <div class="input-control i-c-2">
-                    <input type="text" name="name" required placeholder="Votre nom">
-                    <input type="email" name="email" required placeholder="Votre email">
+                    <input type="text" name="name" required placeholder={{$glossary.your_name}}>
+                    <input type="email" name="email" required placeholder={{$glossary.your_email}}>
                 </div>
                 <div class="input-control">
-                    <input type="text" name="subject" required placeholder="Sujet">
+                    <input type="text" name="subject" required placeholder={{$glossary.subject}}>
                 </div>
                 <div class="input-control">
-                    <textarea name="message" id="" cols="15" rows="8" placeholder="Ecrivez ici..."></textarea>
+                    <textarea name="message" id="" cols="15" rows="8" placeholder={{$glossary.message}}></textarea>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
                     <div class="btn-container">
                         <a href="#">
-                            <button type="submit" class="btn-text">Envoyer
+                            <button type="submit" class="btn-text">{{$glossary.send_message}}
                               <span class="btn-icon"><i class="fas fa-chevron-right"></i></span>
                             </button>
                             <i class="bg"></i>
