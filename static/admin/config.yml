@@ -170,7 +170,7 @@ collections:
       ]
   - name: "posts" # Used in routes, e.g., /admin/collections/post
     label: "Posts" # Used in the UI
-    folder: "content/recent-posts" # The path to the folder where the documents are stored
+    folder: "content/fr/recent-posts" # The path to the folder where the documents are stored
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     media_folder: "" # Save images in the post's own folder instead of the static folder
     public_folder: ""
