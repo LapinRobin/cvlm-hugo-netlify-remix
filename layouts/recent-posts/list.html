@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+
+  <div class="recent-posts-container">
+    <main>
+      <h1>{{ .Title }}</h1>
+      <div class="recent-posts">
+        {{ range .Data.Pages }}
+          <article class="post-snippet">
+            <h3>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+          </article>
+        {{ end }}
+      </div>
+    </main>
+  </div>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

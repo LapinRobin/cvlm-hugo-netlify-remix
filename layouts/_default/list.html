@@ -1,9 +1,25 @@
+
+
 {{ $month_names := slice "janvier" "février" "mars" "avril" "mai" "juin" "juillet" "août" "septembre" "octobre" "novembre" "décembre" }}
 {{ $month := sub .Date.Month 1 }}
+
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $key := .Title }}
+
+<!DOCTYPE html>
+<html lang="fr">
 {{ partial "header.html" . }}
+<!-- Generate CSS -->
+{{ $options := (dict "enableSourceMap" true ) }}
+{{ $productStyle := resources.Get "product.scss" | resources.ToCSS $options | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
-<h1>{{ .Title }}</h1>
+{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS $options | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
+<h1>What the hail</h1>
+<!-- <h1>{{ .Title }}</h1> -->
+<div class="main-content">
 {{ range.Data.Pages }}
 <article class="post-snippet">
   <h3>
@@ -14,12 +30,9 @@
 </article>
 {{ end }}
 
+</div>
+
+
 {{ partial "footer.html" . }}
-<!-- {{ define "main" }}
-  {{ range .Data.Pages }}
-    <article>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <div>{{ .Summary }}</div>
-    </article>
-  {{ end }}
-{{ end }} -->
+
+</html>

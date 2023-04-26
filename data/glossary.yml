@@ -18,7 +18,7 @@ en:
   message: Your message here...
   send_message: Send
   recent_articles: Recent posts
-
+  Recent posts: Recent posts
 
 fr:
   contact: Contact
@@ -40,5 +40,6 @@ fr:
   message: Ecrivez ici...
   send_message: Envoyer
   recent_articles: Articles récents
+  Recent posts: Articles récents
 
 

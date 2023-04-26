@@ -25,10 +25,16 @@ mark = "EN"
 
 [menu]
   [[menu.main]]
-    identifier = "recent-posts"
+    identifier = "RecentPosts"
     name = "Recent Posts"
     url = "/recent-posts/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "ArchivePosts"
+    name = "Archive Posts"
+    url = "/archive-posts/"
+    weight = 20
 
 
 [taxonomies]
