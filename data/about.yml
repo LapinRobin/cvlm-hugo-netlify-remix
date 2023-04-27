@@ -18,17 +18,19 @@ en:
 fr:
   title: <span>À propos</span>
   backgroundTitle: À propos
-  portText: Magna dolor nisi reprehenderit irure aliqua
+  portText: Le Cercle de la Voile de Lyon - Meyzieu est un club nautique 
+    situé sur le plan d'eau du Grand Large, à proximité de Lyon. 
+    Il propose différentes activités de voile pour tous les niveaux, de l'initiation à la compétition, 
+    ainsi que des installations pour l'amarrage et le stockage des bateaux.
+
+
   items:
-    - icon: fa-business-time
-      title: Notre expérience, à vos côtés
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-calculator
-      title: Des prix clairs sur toute la ligne
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-bullseye
-      title: Performance & transparence
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-sailboat
+      title: Large choix d'activités de voile
+      content: 
+    - icon: fa-user-tie
+      title: Équipe professionnelle
+      content: 
+    - icon: fa-face-smile-wink
+      title: De bons moments au club
+      content: 
