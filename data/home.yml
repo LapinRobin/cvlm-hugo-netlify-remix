@@ -1,5 +1,5 @@
 fr:
-  image: /media/home-cover.png
+  image: /media/home-cover-medium.png
   title: Cercle de la Voile de Lyon - Meyzieu
   slogan: un club où il fait bon vivre
   shortDescription: un club où il fait bon vivre
@@ -8,7 +8,7 @@ fr:
   registerUrl: https://cvlm.club/en
 
 en:
-  image: /media/home-cover.png
+  image: /media/home-cover-medium.png
   title: Lyon - Meyzieu Sailing Club
   slogan: a club where life is good
   shortDescription: a club where life is good
