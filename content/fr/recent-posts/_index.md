@@ -1,4 +1,4 @@
 ---
-title: "Recent Posts you know"
+title: "Articles récents"
 layout: "recent-posts"
 ---

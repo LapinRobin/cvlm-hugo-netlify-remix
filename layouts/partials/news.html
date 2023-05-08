@@ -2,7 +2,7 @@
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <section class="section sec5 content-sec" id="news">
-    <div class="main-title">
+    <!-- <div class="main-title">
         <h2> {{ $data.title | safeHTML }}
             <span class="bg-text" aria-hidden="true"> {{ $data.backgroundTitle }}</span>
         </h2>
@@ -11,7 +11,7 @@
 
     <p class="sub-title">
         {{ $data.portText }}
-    </p>
+    </p> -->
 
     <div class="news">
         <!-- Recent Posts box -->
@@ -20,8 +20,8 @@
                 <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
                     <img src="/media/pexels-pixabay-262508.jpg" alt="">
                     <div class="news-text">
-                        <h3 class="title">{{ $glossary.recent_articles }}</h3>
-                        <p>{{ .Summary }}</p>
+                        <h4>{{ $glossary.recent_articles }}</h4>
+                        
                     </div>
                 </div>
                 <!-- {{ range first 3 (where site.RegularPages "Type" "==" "news") }}
@@ -44,8 +44,8 @@
                 <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
                     <img src="/media/magnifier-g03d5fe137_1280.jpg" alt="">
                     <div class="news-text">
-                        <h3>Archives</h3>
-                        <p>{{ .Summary }}</p>
+                        <h4>Archives</h4>
+                        
                     </div>
                 </div>
                

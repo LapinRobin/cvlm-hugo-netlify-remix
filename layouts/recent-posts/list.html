@@ -1,6 +1,15 @@
+{{ $month_names := slice "janvier" "février" "mars" "avril" "mai" "juin" "juillet" "août" "septembre" "octobre" "novembre" "décembre" }}
+{{ $month := sub .Date.Month 1 }}
+
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $key := .Title }}
+
 <!DOCTYPE html>
 <html lang="fr">
 {{ partial "head.html" . }}
+<head>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
 <body>
   {{ partial "header.html" . }}
 
@@ -10,9 +19,22 @@
       <div class="recent-posts">
         {{ range .Data.Pages }}
           <article class="post-snippet">
-            <h3>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
+            
+            <div class="post-info">
+              <h3>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+              <time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Day }}&nbsp;{{ index $month_names $month }} {{ .Date.Year }}</time>
+            </div>
+            {{ $image := .Resources.GetMatch (printf "*%s*" (.Params.image | default "")) }}
+            {{ if $image }}
+              <div class="image-container">
+                <img src="{{ $image.RelPermalink }}" alt="Thumbnail">
+              </div>
+            {{ else }}
+              <!-- <p>No image specified in the front matter or not found in the content folder.</p> -->
+            {{ end }}
+          
           </article>
         {{ end }}
       </div>

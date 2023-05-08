@@ -1,20 +1,20 @@
 en:
-  title: <span>About</span>
-  backgroundTitle: About
-  portText:
+  title: <span>À propos</span>
+  backgroundTitle: À propos
+  portText: The Lyon-Meyzieu Sailing Club is a club located on the Grand Large lake, near Lyon.
+    It offers various sailing activities for all levels, from initiation to competition,
+    as well as facilities for boat mooring and storage.
+
   items:
-    - icon: fa-award
-      title: Lorem ipsum dolor sit amet
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-compass
-      title: "We are on your side."
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-leaf
-      title: We care.
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-sailboat
+      title: Wide range of sailing activities
+      content:
+    - icon: fa-user-tie
+      title: Professional team
+      content:
+    - icon: fa-face-smile-wink
+      title: Good times at the club
+      content:
 fr:
   title: <span>À propos</span>
   backgroundTitle: À propos
